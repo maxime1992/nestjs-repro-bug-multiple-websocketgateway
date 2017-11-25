@@ -8,6 +8,29 @@
 </head>
 
 <body>
+  Take a look to your console.<br>
+
+  If everything is working well, you should see two messages every seconds.<br>
+
+  One from users, one from orders.<br>
+
+  <script>
+    var usersSocket = io('localhost:4100/users');
+
+    usersSocket.on(
+      'USER_MSG',
+      msg => console.log(msg)
+    );
+
+    // without even running the following code, the bug already appear
+    
+    // var ordersSocket = io('localhost:4100/orders');
+
+    // ordersSocket.on(
+    //   'ORDER_MSG',
+    //   msg => console.log(msg)
+    // );
+  </script>
 </body>
 
 </html>
