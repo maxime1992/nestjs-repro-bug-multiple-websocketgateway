@@ -34,7 +34,7 @@
   dependencies:
     optional "0.1.4"
 
-"@nestjs/websockets@^4.4.0":
+"@nestjs/websockets@4.4.1":
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/@nestjs/websockets/-/websockets-4.4.1.tgz#bafc434108a320663756acb79a067f9602069cc9"
   dependencies:
